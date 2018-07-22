@@ -1,0 +1,46 @@
+.li-header {
+    display: inline;
+    padding: 5px;
+}
+
+.ul-header {
+    display: inline;
+    padding-left: 0px;
+}
+
+.center {
+    text-align: center
+}
+
+h1 {
+    letter-spacing: 0.217391em;
+}
+
+.entry {
+
+}
+
+.entry-header {
+    text-align: center;
+}
+
+.entry-date {
+    text-align: center;
+    color: lightgrey;
+}
+
+.entry-text {
+    text-align: justify;
+}
+
+.blog {
+    width: 60%;
+}
+
+.spotify {
+    text-align: center;
+}
+
+.img-hor {
+    width: 80%;
+}

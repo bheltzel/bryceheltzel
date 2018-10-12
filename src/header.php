@@ -32,6 +32,8 @@
         </li>
     </ul>
 </div>
-
+<script type="text/javascript" src="js/jq.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/infinite-scroll.pkgd.min.js"></script>
+
 

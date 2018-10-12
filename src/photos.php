@@ -2,35 +2,97 @@
 require_once("header.php");
 ?>
 <body>
-<div role="main" class="container center">
+<div role="main" class="container center" id="container">
     <?php
 
     $image_list = array();
     $files = glob('./i/*');
+
     foreach ($files as $file) {
         $image_list[filemtime($file)] = $file;
     }
     ksort($image_list);
     $image_list = array_reverse($image_list, TRUE);
 
+    $i = 0;
     foreach ($image_list as $image) {
-        $file_name = $image;
-        $photo = '<img src="' . $file_name . '" class="img-hor">';
-        $light_box = '<a href="'.$file_name.'" data-featherlight="image" data-featherlight-close-on-click="anywhere">'.$photo.'</a>';
-        echo($light_box);
-        echo('<br><br>');
+        if ($i < 10) {
+            $file_name = $image;
+            $photo = '<img src="' . $file_name . '" class="img-hor">';
+            $light_box = '<article class="inf"><a href="'.$file_name.'" data-featherlight="image" data-featherlight-close-on-click="anywhere">'.$photo.'</a></article>';
+            echo($light_box);
+            echo('<br><br>');
+            $i++;
+        } else {
+            break;
+        }
     }
     ?>
 </div>
+
 <script>
-    $('.container').infiniteScroll({
-        // options
-        path: '.pagination__next',
-        append: '.img-hor',
-        history: false
+
+    $(document).ready(function() {
+        var a = {};
+        var image_list = {};
+        for(var i = 0; i <= 10; i++) {
+
+            console.log(image_list);
+            var data = {counter: i, image_list: a};
+
+            $.post('get_photos.php', data, function(resp) {
+                var j = JSON.parse(resp);
+                $('#container').append(j['BODY']);
+                image_list = j['IMAGE_LIST'];
+            });
+            console.log(a);
+        }
     });
+
+    // $(window).scroll(function() {
+    //     if(Math.round($(window).scrollTop() + $(window).innerHeight()) === $(window)[0].scrollHeight) {
+    //         console.log('go');
+    //     }
+    // });
+    // $(window).scroll(function() {
+    //     if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    //         var new_div = '<div class="new_block"></div>';
+    //         // $('.main_content').append(new_div.load('/path/to/script.php'));
+    //         console.log('go');
+    //     }
+    // });
+    //
+    // setTimeout(function() {
+    //     var i = 0;
+    //     // $(window).scroll(function() {
+    //         console.log($(window).scrollTop());
+    //         console.log($(document).height());
+    //         if($(window).scrollTop() + 1000 >= $(document).height()) {
+    //             var data = {counter: i};
+    //             $.post('get_photos.php', data, function(resp) {
+    //                 var j = JSON.parse(resp);
+    //                 $('#container').append(j['BODY']);
+    //             });
+    //             console.log('go');
+    //         }
+    //     // });
+    // }, 2000);
+
+
+    // $(window).scroll(function () {
+    //     if ($(window).scrollTop() >= $(document).height() - $(window).height() - 10) {
+    //         var data = {counter: i};
+    //         $.post('get_photos.php', data, function(resp) {
+    //             console.log(resp);
+    //             var j = JSON.parse(resp);
+    //             console.log(j['BODY']);
+    //         });
+    //     }
+    // });
 </script>
-<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
-<script type="text/javascript" src="js/jq.js"></script>
 <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 </body>
+
+<?php
+
+?>

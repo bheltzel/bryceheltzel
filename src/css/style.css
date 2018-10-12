@@ -8,6 +8,15 @@
     padding-left: 0px;
 }
 
+.blog-header {
+    text-align: center;
+}
+
+.blog-date {
+    text-align: center;
+    color: grey;
+}
+
 .center {
     text-align: center
 }

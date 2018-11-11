@@ -22,13 +22,13 @@
             <a href="/rants">rants</a>
         </li>
         <li class="li-header">
-            <a href="/photos/">photos</a>
+            <a href="/photos">photos</a>
         </li>
         <li class="li-header">
-            <a href="/music.php">music</a>
+            <a href="/music">music</a>
         </li>
         <li class="li-header">
-            <a href="/projects/">projects</a>
+            <a href="/projects">projects</a>
         </li>
     </ul>
 </div>

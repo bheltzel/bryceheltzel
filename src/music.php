@@ -3,6 +3,25 @@ require_once("header.php");
 ?>
 <body>
 <div role="main" class="container blog">
+
+<!--    <div class="entry">-->
+<!--        <h2 class="entry-header"></h2>-->
+<!--        <h6 class="entry-date">, 2018</h6>-->
+<!--        <p class="entry-text">-->
+<!---->
+<!--        </p>-->
+<!--        <center></center>-->
+<!--    </div>-->
+<!--    <br><br>-->
+    <div class="entry">
+        <h2 class="entry-header">Dunno - Mac Miller</h2>
+        <h6 class="entry-date">November 4, 2018</h6>
+        <p class="entry-text">
+            Mac was huge for me during college. KIDS was playing all the time and while I don’t listen to much hip-hop these days I did find myself going through his latest record quite a few times. Wish he didn’t have to go.
+        </p>
+        <center><iframe src="https://open.spotify.com/embed/track/1xuA8vy1KA1cfP5UQ7NYSS" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></center>
+    </div>
+    <br><br>
     <div class="entry">
         <h2 class="entry-header">Killer + The Sound - Phoebe Bridgers + Noah & Abby Gundersen</h2>
         <h6 class="entry-date">July 18, 2018</h6>
@@ -21,7 +40,7 @@ require_once("header.php");
             <br><br>
             "Rob and I became obsessed with this @theavettbrothers song last year. It is one of the best songs that I’ve ever heard and it got to a point where I was listening to it repeatedly for several months straight. Simultaneously analyzing these layered lyrics while being emotionally floored at its weight and conclusion. I think the only way we could exercise the song’s grasp on us was to attempt a cover. We hope you enjoy."
         </p>
-        <center></center>
+        <center><iframe src="https://open.spotify.com/embed/track/1xuA8vy1KA1cfP5UQ7NYSS" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></center>
     </div>
     <br><br>
     <div class="entry">
@@ -30,7 +49,7 @@ require_once("header.php");
         <p class="entry-text">
             Brown invited me to go see this Georgia band over at The Independent a few weeks ago. They opened with this jam and I have been listening to it all the time ever since. It's the perfect show opener to get it going. I recommend Jah Werx as another good listen by Susto, but it definitely has a different feel - this band has a good bit of diversity.
         </p>
-        <center></center>
+        <center><iframe src="https://open.spotify.com/embed/track/1xuA8vy1KA1cfP5UQ7NYSS" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></center>
     </div>
     <br><br>
     <div class="entry">
@@ -41,7 +60,7 @@ require_once("header.php");
 
             "The days are cold as hell here, the politics are going to change."
         </p>
-        <center></center>
+        <center><iframe src="https://open.spotify.com/embed/track/1xuA8vy1KA1cfP5UQ7NYSS" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></center>
     </div>
     <br><br>
     <div class="entry">
@@ -50,7 +69,7 @@ require_once("header.php");
         <p class="entry-text">
             I've been a fan since I saw her open for Conor Oberst. There's something profoundly cool about electric guitar solo ballads and Julien crushes it time after time. Her new record keeps pace with her first and I really got into this track. I love a bit of passionately yelling repetitive lyrics and she absolutely delivers. Check out Sprained Ankle from her first record too.
         </p>
-        <center></center>
+        <center><iframe src="https://open.spotify.com/embed/track/1xuA8vy1KA1cfP5UQ7NYSS" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></center>
     </div>
 <!--    <div class="entry">-->
 <!--        <h2 class="entry-header"></h2>-->

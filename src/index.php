@@ -15,3 +15,6 @@ require_once("header.php");
     </p>
 </div>
 </body>
+<?php
+require_once("footer.php");
+?>

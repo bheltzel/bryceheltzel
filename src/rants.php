@@ -114,3 +114,6 @@ require_once("header.php");
 <!--    <br><br>-->
 </div>
 </body>
+<?php
+require_once("footer.php");
+?>

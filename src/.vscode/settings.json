@@ -1,0 +1,44 @@
+{
+    "deploy.reloaded": {
+        "packages": [
+            {
+                "name": "Version 2.3.4",
+                "description": "Package version 2.3.4",
+
+                "files": [
+                    "/*.php",
+                    "/*.py"
+                ],
+                "deployOnSave": true
+            }
+        ],
+
+        "targets": [
+            {
+                "type": "sftp",
+                "name": "bryceheltzel",
+                "description": "A SFTP folder",
+
+                "dir": "/var/www/bryceheltzel.com/public_html",
+                "host": "107.170.202.15",
+                "port": 22,
+                
+                "user": "root",
+                "privateKey": "/Users/bryceheltzel 1/.ssh/id_rsa",
+
+                "mappings": {
+                    "~/bryceheltzel/src": "/var/www/bryceheltzel.com/public_html"
+                },
+                
+                "commands": {
+                    "uploaded": [
+                        "chmod 755 ${remote_file}"
+                    ]
+                }
+                // "uploaded": "./uploadedToSFTP.js",
+                // "uploadedOptions": 23979
+            }
+        ]
+    },
+    "git.ignoreLimitWarning": true
+}

@@ -25,9 +25,7 @@ h1 {
     letter-spacing: 0.217391em;
 }
 
-.entry {
-
-}
+.entry {}
 
 .entry-header {
     text-align: center;
@@ -52,4 +50,26 @@ h1 {
 
 .img-hor {
     width: 80%;
+}
+
+.us-photo {
+    padding-bottom: 25px;
+}
+
+.gal {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+.gal img {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .gal {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
 }
